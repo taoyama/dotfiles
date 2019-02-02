@@ -9,11 +9,16 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-scripts/gtags.vim'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 """"""""""""""""""""""""""""""
 
+" gtags.vim
 map <C-h> :Gtags -f %<CR>
 map <C-j> :GtagsCursor<CR>
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
+
+" nerdtree
+let NERDTreeShowHidden=1
